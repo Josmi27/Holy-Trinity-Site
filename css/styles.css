@@ -10,11 +10,17 @@ h3, h4 {
     color: #4f0084;
 }
 .service-schedule-rightside-content {
-     display: block;
-     text-align: right;
-     color: #41006d;
+    display: block;
+    text-align: right;
+    color: #41006d;
 } 
- .service-schedule {
+.service-schedule {
     display: flex;
     justify-content: space-between;
- }
+}
+.giving-img {
+    text-align: center;
+}
+.header {
+    text-align: center;
+}
