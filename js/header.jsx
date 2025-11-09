@@ -1,16 +1,34 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
+import { Box } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import HolyTrinityLogo from "../img/HolyTrinityLogo.jpg";
 
 export default function Header() {
-    return (
-            <AppBar position="static" color="primary" sx={{ backgroundColor: 'blue' }}>
-      <Toolbar>
-        <Typography variant="h6" component="div">
-          Holy Trinity (Visible Test)
+  // Next step: Fix the image render for the other files & render remaining trustee images on giving page
+  return (
+    <AppBar position="static" sx={{ backgroundColor: "#6a1b9a" }}>
+      <Toolbar
+      sx={{ justifyContent: 'center'}} 
+      >
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center", // centers children horizontally
+        // textAlign: "center", // centers text within Typography
+      }}
+    >
+            <img src={HolyTrinityLogo} width="50px" />
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  2100 Vine Street Baltimore, MD 21223
         </Typography>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        Sunday Morning Worship Service @ 10:45 AM
+        </Typography>
+         </Box>
       </Toolbar>
     </AppBar>
-    )
+  );
 }
