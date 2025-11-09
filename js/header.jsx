@@ -7,7 +7,9 @@ import HolyTrinityLogo from "../img/HolyTrinityLogo.jpg";
 
 export default function Header() {
   // Next step: Fix the image render for the other files & render remaining trustee images on giving page
+  // Then, add this header to all pages
   return (
+    <>
     <AppBar position="static" sx={{ backgroundColor: "#6a1b9a" }}>
       <Toolbar
       sx={{ justifyContent: 'center'}} 
@@ -16,8 +18,7 @@ export default function Header() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center", // centers children horizontally
-        // textAlign: "center", // centers text within Typography
+        alignItems: "center", 
       }}
     >
             <img src={HolyTrinityLogo} width="50px" />
@@ -30,5 +31,8 @@ export default function Header() {
          </Box>
       </Toolbar>
     </AppBar>
+    <br />
+    <br />
+    </>
   );
 }
