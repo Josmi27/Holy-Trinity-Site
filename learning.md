@@ -1,4 +1,15 @@
 Questions I Had:
+How to load the content on the path page without also loading the home page content?
+
+
+How do I switch from the traditional architecture to the all React architecture?
+1. Add pages folder under js folder to represent the different pages of the website
+2. Translate html files into jsx files
+3. 
+
+How is this new structure going to work, going from the traditional multi-HTML page setup to full react using React Router?
+There is one page that always shows - index.jsx. And React Router is responsible for connecting the path (what the url is) to components (what is shown for said path). 
+
 How do I get my html pages to work now that I'm using webpack to run the project via npm run dev?
 I need to switch my app from traditional architecture to React architecture, where webpack continues to only render one page - index.html, bundling index.jsx, and then use React Router to navigate to other pages. 
 

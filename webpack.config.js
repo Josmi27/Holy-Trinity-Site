@@ -9,7 +9,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    assetModuleFilename: "img/[name][ext]", // default for assets like images
+    assetModuleFilename: "img/[name][ext]",
   },
   module: {
     rules: [
@@ -24,10 +24,14 @@ module.exports = {
         },
       },
       {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        type: "asset/resource", // tells webpack to handle image imports
+        type: "asset/resource", 
         generator: {
-          filename: "img/[name][ext]", // output folder for bundled images
+          filename: "img/[name][ext]", 
         },
       },
     ],
@@ -42,9 +46,10 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"), // serve from dist
+      directory: path.join(__dirname, "dist"), 
     },
     port: 3000,
-    open: true, // automatically open browser
+    open: true,
+    historyApiFallback: true
   },
 };
