@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./header.jsx";
 import Beliefs from "./pages/Beliefs.jsx";
+import Schedule from "./pages/Schedule.jsx"
 import Home from "./pages/Home.jsx";
+import Giving from "./pages/Giving.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../css/styles.css"
 
@@ -13,6 +15,8 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/beliefs" element={<Beliefs />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/giving" element={<Giving />} />
         </Routes>
         </BrowserRouter>
     )
