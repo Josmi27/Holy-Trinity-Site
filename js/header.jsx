@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import HolyTrinityLogo from "../img/HolyTrinityLogo.jpg";
+import { Link } from "react-router";
 
 export default function Header() {
   return (
@@ -19,14 +20,38 @@ export default function Header() {
         alignItems: "center", 
       }}
     >
-            <img src={HolyTrinityLogo} width="50px" />
+        <img src={HolyTrinityLogo} width="50px" />
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   2100 Vine Street Baltimore, MD 21223
         </Typography>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
         Sunday Morning Worship Service @ 10:45 AM
         </Typography>
-         </Box>
+        <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center", 
+          gap: 10,
+          paddingBottom: 1,
+          paddingTop: 1
+        }}
+      >
+          <Link to="/" style={{
+            color: "gold"
+          }}>Home</Link>
+          <Link to="/beliefs" style={{
+            color: "gold"
+          }}>Our Beliefs</Link>
+                    <Link to="/schedule" style={{
+            color: "gold"
+          }}>Service Schedule</Link>
+                    <Link to="/giving" style={{
+            color: "gold"
+          }}>Giving
+          </Link>
+        </Box>
+    </Box>
       </Toolbar>
     </AppBar>
     <br />
