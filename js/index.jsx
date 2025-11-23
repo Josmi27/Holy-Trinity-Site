@@ -6,6 +6,7 @@ import Schedule from "./pages/Schedule.jsx"
 import Home from "./pages/Home.jsx";
 import Giving from "./pages/Giving.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./footer.jsx"
 import "../css/styles.css"
 
 const App = () => {
@@ -18,6 +19,11 @@ const App = () => {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/giving" element={<Giving />} />
         </Routes>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
         </BrowserRouter>
     )
 }

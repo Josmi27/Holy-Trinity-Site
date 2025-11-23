@@ -13,10 +13,12 @@ h3, h4 {
     display: block;
     text-align: right;
     color: #41006d;
+    padding-right: 40px;
 } 
 .service-schedule {
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
 }
 .giving-img {
     text-align: center;

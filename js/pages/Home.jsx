@@ -28,10 +28,6 @@ export default function Home() {
         <br />
         <br />
         Ezekial 36:26: "God's Word transforms lives."
-        <br />
-        <br />
-        <br />
-        <br />
       </h4>
     </div>
   );
