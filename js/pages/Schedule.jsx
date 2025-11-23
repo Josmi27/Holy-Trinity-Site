@@ -2,6 +2,7 @@ import React from "react"
 export default function Schedule() {
     return (
         <>
+        <h1>Service Schedule</h1>
         <div class="service-schedule">
             <h4>Holy Communion</h4>
             <span class="service-schedule-rightside-content"><h4>Every 4th Sunday</h4></span>

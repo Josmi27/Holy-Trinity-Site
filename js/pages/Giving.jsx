@@ -6,7 +6,6 @@ export default function Giving() {
     return (
         <>
         <h1>Giving</h1>
-        <br />
         <h2>"Bring all the tithes into the storehouse,<br />
 That there may be food in My house,<br />
 And try Me now in this,<br />
