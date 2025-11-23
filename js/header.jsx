@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import HolyTrinityLogo from "../img/HolyTrinityLogo.jpg";
 
 export default function Header() {
-  // Next step: Populate schedule.jsx and add it to routes. Then repeat for giving page
   return (
     <>
     <AppBar position="static" sx={{ backgroundColor: "#6a1b9a" }}>
