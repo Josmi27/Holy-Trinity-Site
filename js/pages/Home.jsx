@@ -1,10 +1,18 @@
 import React from "react";
 import HolyTrinityPastor from "../../img/HolyTrinityPastor.jpg";
 import "../../css/styles.css"; 
+import { Box } from "@mui/material"
 
 export default function Home() {
   return (
     <div>
+        <Box
+            sx={{
+                minHeight: "80vh",
+                display: "flex",
+                flexDirection: "column",
+            }}
+        > 
       <img
         src={HolyTrinityPastor}
         width="250"
@@ -31,6 +39,7 @@ export default function Home() {
         <br />
         Ezekial 36:26: "God's Word transforms lives."
       </h4>
+      </Box>
     </div>
   );
 }
