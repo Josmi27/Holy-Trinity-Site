@@ -1,4 +1,8 @@
 Questions I Had:
+How do I stop the footer content from overflowing during certain page widths?
+- Put it in a box, and adjust the overflowing item's sx to have maxWidth of 100%
+
+
 How to load the content on the path page without also loading the home page content?
 
 

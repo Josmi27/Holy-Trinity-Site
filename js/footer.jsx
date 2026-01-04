@@ -12,14 +12,14 @@ export default function Footer() {
         disableGutters
         sx={{
             justifyContent: "space-between",
-            px: 12,
+            px: { xs: 2, md: 12 },
         }}
         >
         <Box
         sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "left", 
+            alignItems: "left"
         }}
         >
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: "left" }}>
@@ -52,15 +52,23 @@ export default function Footer() {
         United Holy Church of America</a>
         </Typography>
         </Box>
-        <iframe
-        width="150"
-        height="150"
-        loading="lazy"
-        allowFullScreen
-        referrerPolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.8391779152567!2d-76.61397788462447!3d39.31322287942315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81b3bea2aa4f3%3A0x3f0f9be65a7735f8!2s2100%20Vine%20St%2C%20Baltimore%2C%20MD%2021223!5e0!3m2!1sen!2sus!4v1698160052994!5m2!1sen!2sus"
+        <Box
+          sx={{
+            maxWidth: 150, 
+            aspectRatio: "1 / 1", 
+          }}
         >
-        </iframe>
+        <iframe
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.8391779152567!2d-76.61397788462447!3d39.31322287942315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81b3bea2aa4f3%3A0x3f0f9be65a7735f8!2s2100%20Vine%20St%2C%20Baltimore%2C%20MD%2021223!5e0!3m2!1sen!2sus!4v1698160052994!5m2!1sen!2sus"
+          ></iframe>
+        </Box>
       </Toolbar>
     </AppBar>
     </>
