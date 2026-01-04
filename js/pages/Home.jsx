@@ -11,7 +11,9 @@ export default function Home() {
         height="250"
         alt="Holy Trinity Pastor"
       />
+      <h4 style={{ textAlign: "left", marginLeft:'30px'}}>Elder C. Ann Smith (Pastor)</h4>
 
+      <br />
       <h1 style={{ color: "#f3d14a", textAlign: "center" }}>
         Welcome to Holy Trinity United Holy Church of America, inc.
       </h1>

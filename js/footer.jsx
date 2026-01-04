@@ -41,6 +41,16 @@ export default function Footer() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
         You are welcome!
         </Typography>
+        <br />
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          A member of the{" "}
+          <a 
+            href="https://nd.unitedholy.church/"
+            target="_blank"
+            style={{ color: "gold" }}
+          >
+        United Holy Church of America</a>
+        </Typography>
         </Box>
         <iframe
         width="150"
