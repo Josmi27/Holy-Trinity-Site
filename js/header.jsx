@@ -22,6 +22,9 @@ export default function Header() {
     >
         <img src={HolyTrinityLogo} width="50px" />
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  Holy Trinity United Holy Church of America, inc.
+        </Typography>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   2100 Vine Street Baltimore, MD 21223
         </Typography>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -43,13 +46,12 @@ export default function Header() {
           <Link to="/beliefs" style={{
             color: "gold"
           }}>Our Beliefs</Link>
-                    <Link to="/schedule" style={{
+          <Link to="/schedule" style={{
             color: "gold"
           }}>Service Schedule</Link>
-                    <Link to="/giving" style={{
+          <Link to="/giving" style={{
             color: "gold"
-          }}>Giving
-          </Link>
+          }}>Giving</Link>
         </Box>
     </Box>
       </Toolbar>
