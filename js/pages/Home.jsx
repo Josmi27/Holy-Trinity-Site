@@ -1,27 +1,39 @@
 import React from "react";
 import HolyTrinityPastor from "../../img/HolyTrinityPastor.jpg";
 import "../../css/styles.css"; 
-import { Box } from "@mui/material"
+import { Box, Stack } from "@mui/material"
 
 export default function Home() {
   return (
     <div>
-        <Box
-            sx={{
-                minHeight: "80vh",
-                display: "flex",
-                flexDirection: "column",
-            }}
-        > 
-      <img
+      <Box
+        sx={{
+            minHeight: "80vh",
+            display: "flex",
+            flexDirection: "column",
+        }}
+      >
+      <Stack direction="row">
+        <div>      
+          <img
         src={HolyTrinityPastor}
         width="250"
         height="250"
         alt="Holy Trinity Pastor"
       />
       <h4 style={{ textAlign: "left", marginLeft:'30px'}}>Elder C. Ann Smith (Pastor)</h4>
-
+      </div>
+      <h4 style={{ marginLeft:'60px'}}>
+        <em>Elder C. Ann Smith</em>, began pastoring in July 2003, Harvest Christian Worship Center, United
+        Holy Church of America, Inc. The Church in 2019, was renamed Holy Trinity, UHCOA.
+        She holds two Associate Degrees, and is currently enrolled in the United Holy Church
+        Leadership Training Program. Elder Smith is the wife of Minister David Smith, mother of two adult children (M. Kirin and
+        Joshua), a grandmother and great grandmother.<br /><br />
+        <em>Passion</em>: To continue to be used as an instrument of God.<br /><br />
+        <em>Motto</em>: Everybody needs periodic self examination. (2 Cor. 13:5)</h4>
+      </Stack>
       <br />
+      
       <h1 style={{ color: "#f3d14a", textAlign: "center" }}>
         Welcome to Holy Trinity United Holy Church of America, inc.
       </h1>
