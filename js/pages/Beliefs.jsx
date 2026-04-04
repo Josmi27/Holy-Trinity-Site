@@ -1,8 +1,16 @@
 import React from "react"
+import { Box } from "@mui/material"
+
 
 export default function Beliefs() {
     return (
         <div style={{ textAlign: "center" }}>
+              <Box
+        sx={{
+            minHeight: "80vh",
+            display: "flex",
+            flexDirection: "column",
+            }}>
         <h1>Our Beliefs</h1>
         <h2>AFFIRMATION OF FAITH</h2>
         <h2>We believe in the Father who is God Almighty.<br /><br />
@@ -48,6 +56,7 @@ export default function Beliefs() {
 
         That without Holiness in spirit, soul, and body, no 
         man shall see the Lord.</h2>
+        </Box>
         </div>
             )
 }

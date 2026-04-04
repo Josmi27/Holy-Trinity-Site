@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 export default function Footer() {
   return (
     <>
-    <AppBar position="relative" sx={{ backgroundColor: "#6a1b9a" }}>
+    <AppBar position="bottom" sx={{ backgroundColor: "#6a1b9a" }}>
         <Toolbar
         disableGutters
         sx={{
