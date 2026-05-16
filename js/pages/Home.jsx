@@ -8,7 +8,6 @@ export default function Home() {
     <div>
       <Box
         sx={{
-            minHeight: "80vh",
             display: "flex",
             flexDirection: "column",
         }}
@@ -50,6 +49,45 @@ export default function Home() {
         <br />
         <br />
         Ezekial 36:26: "God's Word transforms lives."
+      </h4>
+      </Box>
+      <br />
+      <hr />
+      <br />
+      <Box
+        sx={{
+            display: "flex",
+            flexDirection: "column",
+        }}
+      >
+      <h2 style={{ color: "#f3d14a"}}>
+        CHURCH MISSION STATEMENT
+      </h2>
+      <h3 style={{ textAlign: "center"}}>To study, teach, preach and share the Word of God.<br /><br />
+      To honor and exalt God in every aspect of our lives
+      through studying His Word and applying it.<br /><br />
+      To follow Christ and share our faith with others.</h3>
+      </Box>
+      <br />
+      <hr />
+      <br />
+      <Box
+        sx={{
+            minHeight: "34.5vh",
+            display: "flex",
+            flexDirection: "column",
+        }}
+      >
+      <h2 style={{ color: "#f3d14a"}}>
+        VISION
+      </h2>
+      <h3 style={{ textAlign: "center"}}>To be a Gospel Centered Church (a ministry that is
+      focused on Jesus and partnering with Him in His mission 
+      to make disciples) <br /><br />whose goal is to honor the God of the
+      Holy Bible in all we do. <br /></h3>
+      <h4 style={{ textAlign: "center"}}>
+      ~Elder C. Ann Smith <br />
+      Pastor, Holy Trinity UHCA, Inc.
       </h4>
       </Box>
     </div>
